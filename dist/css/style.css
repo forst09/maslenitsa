@@ -1,0 +1,55 @@
+/*common*/
+:root {
+  --white: #ffffff;
+  --grey-light: #F4F4F4;
+  --grey-medium: #BFBEBE;
+  --gery-dark: #282828;
+  --black: #000000;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  overflow-x: hidden;
+  background-color: var(--black);
+  color: var(--black);
+}
+
+.wrapper {
+  padding: 0 10px;
+}
+
+.display-none {
+  display: none;
+}
+
+.logo {
+  font-weight: 800;
+  color: var(--white);
+  text-transform: uppercase;
+  max-width: 178px;
+}
+
+/*end common*/
+/*header*/
+.header {
+  padding-top: 20px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.burger {
+  display: block;
+  width: 20px;
+  height: 16px;
+}
+.burger svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*end header*/
