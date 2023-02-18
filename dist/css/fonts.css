@@ -23,3 +23,8 @@
   font-family: "Inter", sans-serif;
   src: url("../fonts/Inter-Bold.ttf");
 }
+@font-face {
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+  src: url("../fonts/Inter-ExtraBold.ttf");
+}
