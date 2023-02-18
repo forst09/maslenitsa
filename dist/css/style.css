@@ -88,6 +88,17 @@ h1 {
 }
 
 /*end header*/
+/*mobile menu*/
+.mobile-menu {
+  position: fixed;
+  left: -100vw;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: left 0.3s ease;
+}
+
+/*end mobile menu*/
 /*main*/
 .main {
   position: relative;

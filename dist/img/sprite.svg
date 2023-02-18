@@ -4,4 +4,8 @@
         <rect y="7.20703" width="20" height="1.94891" fill="white" />
         <rect y="0.386719" width="20" height="1.94891" fill="white" />
     </symbol>
+    <symbol viewBox="0 0 29 29" id="close">
+        <line x1="7.07039" y1="7.07024" x2="21.2125" y2="21.2124" stroke="#909090" stroke-width="2" />
+        <line x1="21.211" y1="7.07039" x2="7.06888" y2="21.2125" stroke="#909090" stroke-width="2" />
+    </symbol>
 </svg>
