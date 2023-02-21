@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <symbol viewBox="0 0 20 16" id="burger">
-        <rect y="14.0273" width="20" height="1.94891" fill="white" />
-        <rect y="7.20703" width="20" height="1.94891" fill="white" />
-        <rect y="0.386719" width="20" height="1.94891" fill="white" />
+        <rect y="14.0273" width="20" height="1.94891" />
+        <rect y="7.20703" width="20" height="1.94891" />
+        <rect y="0.386719" width="20" height="1.94891" />
     </symbol>
-    <symbol viewBox="0 0 29 29" id="close">
-        <line x1="7.07039" y1="7.07024" x2="21.2125" y2="21.2124" stroke="#909090" stroke-width="2" />
-        <line x1="21.211" y1="7.07039" x2="7.06888" y2="21.2125" stroke="#909090" stroke-width="2" />
+    <symbol viewBox="0 0 20 20" id="close">
+        <rect x="2.22266" y="16.3633" width="20" height="2" transform="rotate(-45 2.22266 16.3633)" />
+        <rect x="3.63672" y="2.22266" width="20" height="2" transform="rotate(45 3.63672 2.22266)" />
     </symbol>
 </svg>

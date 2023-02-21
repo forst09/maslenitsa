@@ -28,7 +28,7 @@
                     <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
                 </ul>
             </nav>
-            <a href="javascript:void(0)" class="burger">
+            <a href="javascript:void(0)" class="burger" id="burger">
                 <svg>
                     <use xlink:href="img/sprite.svg#burger"></use>
                 </svg>
@@ -38,8 +38,11 @@
 </header>
 
 <div class="mobile-menu">
-    <div class="wrapper">
-        <a href="javascript:void(0)" class="mobile-menu__close">
+    <div class="main__bg">
+        <img src="img/main/main-bg.jpeg" alt="main background">
+    </div>
+    <div class="wrapper mobile-menu__wrapper">
+        <a href="javascript:void(0)" class="mobile-menu__close" id="closeMobile">
             <svg>
                 <use xlink:href="img/sprite.svg#close"></use>
             </svg>
@@ -74,7 +77,7 @@
         <div class="main__info">
             <div class="wrapper main__info-wrapper">
                 <div class="main__date">25 февраля 2023</div>
-                <h1>Масленица в Никола-Ленивце</h1>
+                <h1 class="main-title">Масленица в Никола-Ленивце</h1>
                 <div class="text text--white">
                     <p>Событие, наполненное смыслами и ярко пылающим современным искусством, перформанс, который на
                         твоих

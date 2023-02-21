@@ -16,7 +16,7 @@
   \***********************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n\r\n\r\n\n\n//# sourceURL=webpack://designagency/./src/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\ndocument.addEventListener('DOMContentLoaded', function () {\r\n    //open mobile menu\r\n    let burger = document.getElementById('burger');\r\n    let mobileMenu = document.getElementsByClassName('mobile-menu');\r\n    if (burger) {\r\n        burger.addEventListener('click', function () {\r\n            mobileMenu[0].classList.add('active');\r\n        });\r\n    }\r\n\r\n    //close mobile menu\r\n    let close = document.getElementById('closeMobile');\r\n    if (close) {\r\n        close.addEventListener('click', function () {\r\n            mobileMenu[0].classList.remove('active');\r\n        });\r\n    }\r\n});\r\n\r\n\n\n//# sourceURL=webpack://designagency/./src/js/app.js?");
 
 /***/ })
 
