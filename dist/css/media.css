@@ -1,0 +1,7 @@
+@media (max-height: 567px) {
+  .main__bg img {
+    width: 100%;
+    transform: unset;
+    object-fit: cover;
+  }
+}
