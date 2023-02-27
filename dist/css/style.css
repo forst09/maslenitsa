@@ -9,11 +9,11 @@
 }
 
 body {
+  position: relative;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   overflow-x: hidden;
-  background-color: var(--black);
   color: var(--black);
 }
 
@@ -59,7 +59,7 @@ svg {
 /*end common*/
 /*header*/
 .header {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -128,7 +128,7 @@ svg {
 
 .mobile-menu__list {
   padding-top: 109px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .mobile-meni__item {
@@ -151,6 +151,10 @@ svg {
   position: relative;
   width: 100vw;
   height: 100vh;
+}
+
+.main__text {
+  max-width: 600px;
 }
 
 .main-title {

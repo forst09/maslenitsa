@@ -1,7 +1,37 @@
 @media(max-height: 567px) {
+    .main {
+        height: auto;
+    }
+
     .main__bg img {
         width: 100%;
         transform: unset;
         object-fit: cover;
+    }
+
+    .mobile-menu__list {
+        padding-top: 54px;
+    }
+
+    .main__info {
+        padding-top: 173px;
+    }
+
+    .main-btn__wrapper {
+        margin-top: 95px;
+    }
+}
+
+@media(min-height: 740px) {
+    .main {
+        height: auto;
+    }
+
+    .main__info {
+        padding-top: 173px;
+    }
+
+    .main-btn__wrapper {
+        margin-top: 95px;
     }
 }
