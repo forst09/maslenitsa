@@ -15,5 +15,18 @@ document.addEventListener('DOMContentLoaded', function () {
             mobileMenu[0].classList.remove('active');
         });
     }
+
+    //swiper gallery
+    const swiperGallery = new Swiper('.gallery__swiper', {
+        loop: true,
+        pagination: {
+            el: '.gallery__swiper-pagination',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.gallery__swiper-next',
+            prevEl: '.gallery__swiper-prev',
+        },
+    })
 });
 

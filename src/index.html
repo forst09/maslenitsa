@@ -85,7 +85,34 @@
     </section>
     <!-- end info -->
 
+    <!-- gallery -->
+    <section class="gallery">
+        <div class="wrapper">
+            <h2 class="title">Как это было</h2>
+            <div class="swiper gallery__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="img/gallery/gallery-1.jpeg" class="gallery__img">
+                            <img src="img/gallery/gallery-1.jpeg" alt="photo1">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="img/gallery/gallery-2.jpeg" class="gallery__img">
+                            <img src="img/gallery/gallery-2.jpeg" alt="photo2">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination pagination gallery__swiper-pagination"></div>
+                <div class="swiper-button-prev arrow gallery__swiper-prev"></div>
+                <div class="swiper-button-next arrow gallery__swiper-next"></div>
+            </div>
+        </div>
+    </section>
+    <!-- end gallery -->
+
     @@include('html/footer.html',{})
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 
