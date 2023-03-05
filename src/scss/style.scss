@@ -87,6 +87,26 @@ svg {
     }
 }
 
+.arrow {
+    display: none;
+}
+
+.swiper-slide {
+    width: auto;
+}
+
+.pagination {
+    position: static;
+    color: var(--black);
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.swiper-pagination-total {
+    color: var(--grey);
+}
+
 /*end common*/
 
 /*header*/
@@ -325,3 +345,24 @@ svg {
 }
 
 /*end info*/
+
+/*start gallery*/
+.gallery__img {
+    width: 289px;
+    height: 192px;
+}
+
+.gallery__swiper {
+    padding: 0 10px;
+
+    .swiper-slide-active {
+        opacity: 100%;
+        transition: opacity 0.3s ease;
+    }
+
+    .swiper-slide-next {
+        opacity: 20%;
+    }
+}
+
+/*end gallery*/

@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
     //swiper gallery
     const swiperGallery = new Swiper('.gallery__swiper', {
         loop: true,
+        slidesPerView: 'auto',
+        spaceBetween: 10,
         pagination: {
             el: '.gallery__swiper-pagination',
             type: 'fraction',
@@ -27,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             nextEl: '.gallery__swiper-next',
             prevEl: '.gallery__swiper-prev',
         },
+        // breakpoints: {}
     })
 });
 
