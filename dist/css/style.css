@@ -424,7 +424,7 @@ svg {
 .price__bg img {
   position: absolute;
   top: 0;
-  right: -1%;
+  right: -3px;
   width: 870px;
   height: auto;
 }
