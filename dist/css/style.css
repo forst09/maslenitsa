@@ -102,6 +102,16 @@ svg {
   color: var(--grey);
 }
 
+.scroll {
+  overflow-x: auto;
+  padding: 0 10px;
+}
+.scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+}
+
 /*end common*/
 /*header*/
 .header {
@@ -348,6 +358,27 @@ svg {
 .card__photo {
   width: 203px;
   height: 260px;
+}
+
+.massmedia__wrapper {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.card {
+  max-width: 203px;
+}
+
+.card__name {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--grey-medium);
+}
+
+.card__text {
+  margin-top: 5px;
 }
 
 /*end massmedia*/
