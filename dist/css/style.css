@@ -112,6 +112,18 @@ svg {
   background-color: transparent;
 }
 
+.line-clamp {
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  display: box;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+
 /*end common*/
 /*header*/
 .header {
@@ -212,6 +224,12 @@ svg {
 
 .main__text {
   max-width: 600px;
+}
+
+.main__text-text {
+  line-clamp: 5;
+  -ms-line-clamp: 5;
+  -webkit-line-clamp: 5;
 }
 
 .main-title {
@@ -345,11 +363,11 @@ svg {
 .gallery__swiper {
   padding: 0 10px;
 }
-.gallery__swiper .swiper-slide-active {
+.gallery__swiper .swiper-slide.swiper-slide-active {
   opacity: 100%;
-  transition: opacity 0.3s ease;
 }
-.gallery__swiper .swiper-slide-next {
+.gallery__swiper .swiper-slide {
+  transition: opacity 0.5s ease;
   opacity: 20%;
 }
 
@@ -379,6 +397,9 @@ svg {
 
 .card__text {
   margin-top: 5px;
+  line-clamp: 7;
+  -ms-line-clamp: 7;
+  -webkit-line-clamp: 7;
 }
 
 /*end massmedia*/
