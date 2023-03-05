@@ -32,6 +32,10 @@ svg {
     font-weight: 600;
     font-size: 26px;
     line-height: 34px;
+
+    &--white {
+        color: var(--white);
+    }
 }
 
 .wrapper {
@@ -427,3 +431,64 @@ svg {
 }
 
 /*end massmedia*/
+
+/*start price*/
+.price {
+    position: relative;
+    padding: 40px 0;
+}
+
+.price__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        top: 0;
+        right: -1%;
+        width: 870px;
+        height: auto;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    }
+}
+
+.price__wrapper {
+    text-align: center;
+}
+
+.price__title {
+    margin: 0 auto 5px;
+    max-width: 245px;
+}
+
+.price__footnote {
+    max-width: 230px;
+    margin: 0 auto;
+}
+
+.footnote {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    color: var(--white);
+}
+
+.price-btn__wrapper {
+    margin-top: 30px;
+}
+
+/*end price*/
