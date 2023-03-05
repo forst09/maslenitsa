@@ -344,3 +344,10 @@ svg {
 }
 
 /*end gallery*/
+/*start massmedia*/
+.card__photo {
+  width: 203px;
+  height: 260px;
+}
+
+/*end massmedia*/
