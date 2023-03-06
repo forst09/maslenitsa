@@ -471,29 +471,36 @@ svg {
 
 /*end price*/
 /*start rools*/
-.dropdown {
+.accordion {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
   border-bottom: 1px solid var(--grey);
 }
-.dropdown:nth-of-type(1) {
+.accordion:nth-of-type(1) {
   border-top: 1px solid var(--grey);
 }
-
-.dropdown__text {
-  margin-top: 13px;
+.accordion.active .accordion__text {
+  max-height: fit-content;
+  opacity: 1;
 }
 
-.dropdown__content {
+.accordion__text {
+  margin-top: 13px;
+  max-height: 0px;
+  opacity: 0;
+  transition: min-height 3s, opacity 3s;
+}
+
+.accordion__content {
   max-width: 85%;
 }
 
-.dropdown__arrow {
+.accordion__arrow {
   width: 28px;
   height: 28px;
 }
-.dropdown__arrow svg {
+.accordion__arrow svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
