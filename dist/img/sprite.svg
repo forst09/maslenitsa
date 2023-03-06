@@ -8,4 +8,7 @@
         <rect x="2.22266" y="16.3633" width="20" height="2" transform="rotate(-45 2.22266 16.3633)" />
         <rect x="3.63672" y="2.22266" width="20" height="2" transform="rotate(45 3.63672 2.22266)" />
     </symbol>
+    <symbol viewBox="0 0 28 28" id="arrow">
+        <path d="M24 9L14 19L4 9" stroke-width="2" />
+    </symbol>
 </svg>

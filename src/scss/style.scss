@@ -28,7 +28,7 @@ svg {
 }
 
 .title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-weight: 600;
     font-size: 26px;
     line-height: 34px;
@@ -36,6 +36,12 @@ svg {
     &--white {
         color: var(--white);
     }
+}
+
+.title-medium {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .wrapper {
@@ -492,3 +498,38 @@ svg {
 }
 
 /*end price*/
+
+/*start rools*/
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--grey);
+
+    &:nth-of-type(1) {
+        border-top: 1px solid var(--grey);
+    }
+}
+
+.dropdown__text {
+    margin-top: 13px;
+}
+
+.dropdown__content {
+    max-width: 85%;
+}
+
+.dropdown__arrow {
+    width: 28px;
+    height: 28px;
+
+    svg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        stroke: var(--black);
+        fill: transparent
+    }
+}
+
+/*end rools*/
