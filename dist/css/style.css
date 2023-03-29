@@ -474,7 +474,6 @@ svg {
 .accordion {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 20px 0;
   border-bottom: 1px solid var(--grey);
 }
@@ -482,14 +481,19 @@ svg {
   border-top: 1px solid var(--grey);
 }
 .accordion--active .accordion__text {
-  max-height: fit-content;
   opacity: 1;
+  padding-top: 13px;
+}
+.accordion--active .accordion__arrow {
+  transform: rotate(180deg);
 }
 
 .accordion__text {
+  box-sizing: content-box;
   max-height: 0px;
   opacity: 0;
-  transition: max-height 3s;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, padding-top 0.3s ease-in-out;
 }
 
 .accordion__content {
@@ -499,6 +503,7 @@ svg {
 .accordion__arrow {
   width: 28px;
   height: 28px;
+  transition: transform 0.3s ease-in-out;
 }
 .accordion__arrow svg {
   width: 100%;

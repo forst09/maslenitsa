@@ -19,8 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
     //accordion
     document.querySelectorAll('.accordion').forEach((item) => {
         item.addEventListener('click', function () {
+            const content = item.querySelector('.accordion__text');
             if (item.classList.contains('accordion--active')) {
                 item.classList.remove('accordion--active');
+                content.style.maxHeight = null;
+                item.setAttribute('aria-expanded', false);
+                content.setAttribute('aria-hidden', true);
             }
             else {
                 const parent = item.closest('section');
@@ -29,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     item.classList.remove('accordion--active');
                 });
                 item.classList.add('accordion--active');
+                content.style.maxHeight = content.scrollHeight + 'px';
+                item.setAttribute('aria-expanded', true);
+                content.setAttribute('aria-hidden', false);
             }
         })
     });
