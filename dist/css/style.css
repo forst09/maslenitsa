@@ -474,22 +474,22 @@ svg {
 .accordion {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 0;
   border-bottom: 1px solid var(--grey);
 }
 .accordion:nth-of-type(1) {
   border-top: 1px solid var(--grey);
 }
-.accordion.active .accordion__text {
+.accordion--active .accordion__text {
   max-height: fit-content;
   opacity: 1;
 }
 
 .accordion__text {
-  margin-top: 13px;
   max-height: 0px;
   opacity: 0;
-  transition: min-height 3s, opacity 3s;
+  transition: max-height 3s;
 }
 
 .accordion__content {

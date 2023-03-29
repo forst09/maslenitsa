@@ -16,6 +16,23 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    //accordion
+    document.querySelectorAll('.accordion').forEach((item) => {
+        item.addEventListener('click', function () {
+            if (item.classList.contains('accordion--active')) {
+                item.classList.remove('accordion--active');
+            }
+            else {
+                const parent = item.closest('section');
+                const currentAccordions = parent.querySelectorAll('.accordion');
+                currentAccordions.forEach((item) => {
+                    item.classList.remove('accordion--active');
+                });
+                item.classList.add('accordion--active');
+            }
+        })
+    });
+
     //swiper gallery
     const swiperGallery = new Swiper('.gallery__swiper', {
         loop: true,
