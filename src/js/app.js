@@ -31,6 +31,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 const currentAccordions = parent.querySelectorAll('.accordion');
                 currentAccordions.forEach((item) => {
                     item.classList.remove('accordion--active');
+                    item.querySelector('.accordion__text').style.maxHeight = null;
+                    item.setAttribute('aria-expanded', false);
+                    item.querySelector('.accordion__text').setAttribute('aria-hidden', true);
                 });
                 item.classList.add('accordion--active');
                 content.style.maxHeight = content.scrollHeight + 'px';
