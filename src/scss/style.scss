@@ -82,6 +82,10 @@ svg {
     font-weight: 600;
     font-size: 17px;
     line-height: 24px;
+
+    &--border {
+        border: 1px solid var(--grey);
+    }
 }
 
 .photo {
@@ -514,7 +518,6 @@ svg {
         .accordion__text {
             opacity: 1;
             padding-top: 13px;
-            // max-height: fit-content;
         }
 
         .accordion__arrow {
@@ -547,6 +550,10 @@ svg {
         stroke: var(--black);
         fill: transparent
     }
+}
+
+.rools-btn__wrapper {
+    margin-top: 30px;
 }
 
 /*end rools*/

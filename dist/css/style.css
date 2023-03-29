@@ -78,6 +78,9 @@ svg {
   font-size: 17px;
   line-height: 24px;
 }
+.btn--border {
+  border: 1px solid var(--grey);
+}
 
 .photo {
   display: flex;
@@ -511,6 +514,10 @@ svg {
   object-fit: cover;
   stroke: var(--black);
   fill: transparent;
+}
+
+.rools-btn__wrapper {
+  margin-top: 30px;
 }
 
 /*end rools*/
