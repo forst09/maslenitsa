@@ -35,7 +35,7 @@ svg {
   color: var(--white);
 }
 
-.title-medium {
+.title-little {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -590,8 +590,11 @@ svg {
   padding: 0 10px;
 }
 
-.buy__title {
+.title-medium {
   margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
 }
 
 .input {
@@ -606,6 +609,11 @@ svg {
   line-height: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: var(--grey);
+}
+.input::placeholder {
+  font-family: "Inter", sans-serif;
+  color: var(--grey);
 }
 
 .input__wrapper + .input__wrapper {
@@ -614,6 +622,10 @@ svg {
 
 .checkbox {
   margin-top: 40px;
+}
+
+.checkbox__input {
+  display: none;
 }
 
 .checkbox__label {
