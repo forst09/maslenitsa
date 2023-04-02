@@ -521,3 +521,55 @@ svg {
 }
 
 /*end rools*/
+/*start video*/
+.video-js {
+  margin-top: 20px;
+  width: 100%;
+  min-height: 60.628vw;
+  height: auto;
+}
+
+.vjs-poster img {
+  object-fit: cover;
+}
+
+.video-js .vjs-big-play-button {
+  width: 57px;
+  height: 57px;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--white);
+}
+
+.vjs-icon-play:before,
+.video-js .vjs-play-control .vjs-icon-placeholder:before,
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  content: "";
+  width: 11px;
+  height: 14px;
+  left: 50%;
+  top: 50%;
+  transform: translate(calc(-50% + 2px), -50%);
+  background-image: url("../img/play.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.vjs-poster::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  opacity: 0.35;
+}
+
+/*end video*/

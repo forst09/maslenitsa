@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />hji
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -306,10 +307,29 @@
             </div>
         </div>
     </section>
-    <!-- start rools -->
+    <!-- end rools -->
+
+    <!-- start video -->
+    <section class="video">
+        <div class="wrapper">
+            <h2 class="title">Программа фестиваля</h2>
+            <div class="text">
+                <p>В ожидании программы вспоминаем, как это было в прошлом году:</p>
+            </div>
+            <video id="my-video" class="video-js video__video" controls preload="metadata"
+                poster="img/video/poster.jpeg" data-setup="{}">
+                <source src="img/video/video.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </section>
+    <!-- end video -->
 
     <footer></footer>
 
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.0.4/lang/ru.min.js"
+        integrity="sha512-xIiHwDm0+0nVJAk6WskPfySg0C9CwJPqIzRoAdHKmH7+oUMkkJyyYgaIVi5oQ2p9PiU3FVLGqFFz7rr5xTvX6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>

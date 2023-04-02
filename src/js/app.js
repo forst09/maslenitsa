@@ -1,3 +1,4 @@
+'use strict';
 document.addEventListener('DOMContentLoaded', function () {
     //open mobile menu
     let burger = document.getElementById('burger');
@@ -58,5 +59,10 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         // breakpoints: {}
     })
+
+    //video
+    // videojs(document.querySelector('.video-js'), {
+    //     language: 'ru'
+    // });
 });
 
