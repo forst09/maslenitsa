@@ -60,9 +60,5 @@ document.addEventListener('DOMContentLoaded', function () {
         // breakpoints: {}
     })
 
-    //video
-    // videojs(document.querySelector('.video-js'), {
-    //     language: 'ru'
-    // });
 });
 
