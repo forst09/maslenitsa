@@ -264,15 +264,15 @@
     <section class="buy">
         <div class="buy__wrapper">
             <h3 class="title-medium title--white">Стоимость билета 4000 &#8381;</h3>
-            <form action="#" class="form">
+            <form action="#" class="form" id="form" novalidate="novalidate">
                 <div class="input__wrapper">
-                    <input class="input" type="text" placeholder="Имя">
+                    <input class="input js-required" type="text" placeholder="Имя" required>
                 </div>
                 <div class="input__wrapper">
-                    <input class="input" type="email" placeholder="E-mail">
+                    <input class="input js-required" type="email" placeholder="E-mail" required>
                 </div>
                 <div class="checkbox">
-                    <input class="checkbox__input" type="checkbox" id="radio" checked>
+                    <input class="checkbox__input js-required" type="checkbox" id="radio" checked>
                     <label class="checkbox__label" for="radio"><span>Даю согласие на обработку</span> <a href="#"
                             class="link-underline checkbox__label-link">Персональных данных</a></label>
                 </div>

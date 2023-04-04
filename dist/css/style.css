@@ -6,6 +6,7 @@
   --grey-medium: #BFBEBE;
   --gery-dark: #282828;
   --black: #000000;
+  --red: #C42C2C;
 }
 
 body {
@@ -609,11 +610,18 @@ svg {
   line-height: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--grey);
+  color: var(--white);
 }
 .input::placeholder {
   font-family: "Inter", sans-serif;
   color: var(--grey);
+}
+
+.input.error {
+  border-bottom: 1px solid var(--red);
+}
+.input.error::placeholder {
+  color: var(--red);
 }
 
 .input__wrapper + .input__wrapper {
@@ -626,6 +634,10 @@ svg {
 
 .checkbox__input {
   display: none;
+}
+
+.checkbox__input.error ~ .checkbox__label::after {
+  border: 1px solid var(--red);
 }
 
 .checkbox__label {

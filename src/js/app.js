@@ -44,6 +44,46 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     });
 
+    //form validation
+    const form = document.getElementById('form');
+    form.addEventListener('submit', formSend);
+    async function formSend(e) {
+        e.preventDefault();
+        formValidate(form);
+    }
+
+    function formValidate(form) {
+        let formRequired = document.querySelectorAll('.js-required');
+        formRequired.forEach((item) => {
+            formRemoveError(item);
+            let itemType = item.getAttribute('type');
+            if (itemType == 'email') {
+                if (emailTest(item)) {
+                    formAddError(item);
+                }
+            }
+            if (itemType == 'checkbox' && item.checked == false) {
+                formAddError(item);
+            }
+            if (item.value === '') {
+                item.setAttribute('placeholder', 'Заполните поле')
+                formAddError(item);
+            }
+        });
+    }
+
+    function formAddError(input) {
+        input.classList.add('error');
+    }
+
+    function formRemoveError(input) {
+        input.classList.remove('error');
+    }
+
+    function emailTest(input) {
+        return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+    }
+
     //swiper gallery
     const swiperGallery = new Swiper('.gallery__swiper', {
         loop: true,
