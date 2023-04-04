@@ -42,6 +42,13 @@ svg {
   line-height: 22px;
 }
 
+.title-small {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 13px;
+}
+
 .wrapper {
   padding: 0 10px;
 }
@@ -137,7 +144,6 @@ svg {
   box-orient: vertical;
 }
 
-/*end common*/
 /*header*/
 .header {
   position: absolute;
@@ -167,6 +173,55 @@ svg {
 }
 
 /*end header*/
+/*start footer*/
+.footer {
+  padding: 40px 0 48px;
+  background-color: var(--grey-light);
+}
+
+.footer__wrapper {
+  padding: 0 10px;
+}
+
+.footer__top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer__bottom {
+  margin-top: 30px;
+}
+
+.footer__nav-item + .footer__nav-item {
+  margin-top: 10px;
+}
+
+.footer__nav-link {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--grey);
+}
+
+.footer__links {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__links-item {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+/*end footer*/
 /*mobile menu*/
 .mobile-menu {
   position: fixed;
@@ -227,6 +282,7 @@ svg {
 }
 
 /*end mobile menu*/
+/*end common*/
 /*main*/
 .main {
   margin-bottom: 80px;
@@ -592,7 +648,7 @@ svg {
 }
 
 .title-medium {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 600;
@@ -695,6 +751,10 @@ svg {
 .btn--input {
   border: none;
   width: 100%;
+}
+
+.buy__title-medium {
+  margin-bottom: 20px;
 }
 
 /*end buy*/
