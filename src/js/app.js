@@ -57,16 +57,18 @@ document.addEventListener('DOMContentLoaded', function () {
         formRequired.forEach((item) => {
             formRemoveError(item);
             let itemType = item.getAttribute('type');
+            if (item.value === '') {
+                item.setAttribute('placeholder', 'Заполните поле')
+                formAddError(item);
+            }
             if (itemType == 'email') {
                 if (emailTest(item)) {
+                    item.value = '';
+                    item.setAttribute('placeholder', 'Некорректный email');
                     formAddError(item);
                 }
             }
             if (itemType == 'checkbox' && item.checked == false) {
-                formAddError(item);
-            }
-            if (item.value === '') {
-                item.setAttribute('placeholder', 'Заполните поле')
                 formAddError(item);
             }
         });
