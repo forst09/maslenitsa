@@ -26,6 +26,10 @@ svg {
   display: inline-block;
 }
 
+.not-scroll {
+  overflow: hidden;
+}
+
 .title {
   margin-bottom: 30px;
   font-weight: 600;
@@ -327,9 +331,9 @@ svg {
   overflow: hidden;
 }
 .main__bg img {
-  width: auto;
+  width: 100%;
   height: 100%;
-  transform: translateX(-17%);
+  object-fit: cover;
 }
 .main__bg::after {
   content: "";

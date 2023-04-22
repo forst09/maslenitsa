@@ -11,13 +11,18 @@
     <!-- main -->
     <main class="main">
         <div class="main__bg">
-            <img src="img/main/main-bg.jpeg" alt="фоновое изображение">
+            <picture>
+                <source srcset="img/main/main-bg__desctop.jpg" media="(min-width:1200px)" alt="фоновое изображение">
+                <source srcset="img/main/main-bg__tablet.jpg" media="(min-width:640px)" alt="фоновое изображение">
+                <img src="img/main/main-bg__mobile.jpg" alt="фоновое изображение">
+            </picture>
+
         </div>
         <div class="main__info">
             <div class="wrapper main__info-wrapper">
                 <div class="main__text">
                     <div class="main__date">25 февраля 2023</div>
-                    <h1 class="main-title">Масленица в Никола-Ленивце</h1>
+                    <h1 class="main-title">Масленица в Никола&#8209;Ленивце</h1>
                     <div class="text text--white main__text-text line-clamp">
                         <p>Событие, наполненное смыслами и ярко пылающим современным искусством, перформанс, который на
                             твоих

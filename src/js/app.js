@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (burger) {
         burger.addEventListener('click', function () {
             mobileMenu[0].classList.add('active');
+            document.querySelector('body').classList.add('not-scroll');
         });
     }
 
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (close) {
         close.addEventListener('click', function () {
             mobileMenu[0].classList.remove('active');
+            document.querySelector('body').classList.remove('not-scroll');
         });
     }
 
@@ -61,14 +63,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 item.setAttribute('placeholder', 'Заполните поле')
                 formAddError(item);
             }
-            if (itemType == 'email') {
+            else if (itemType == 'email') {
                 if (emailTest(item)) {
                     item.value = '';
                     item.setAttribute('placeholder', 'Некорректный email');
                     formAddError(item);
                 }
             }
-            if (itemType == 'checkbox' && item.checked == false) {
+            else if (itemType == 'checkbox' && item.checked == false) {
                 formAddError(item);
             }
         });
