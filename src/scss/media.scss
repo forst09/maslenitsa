@@ -215,13 +215,15 @@
 
 /*start media for gallery*/
 /*start tablet for gallery*/
-.gallery__swiper {
-    padding: 0 20px;
-}
+@media(min-width: 640px) {
+    .gallery__swiper {
+        padding: 0 20px;
+    }
 
-.gallery__img {
-    width: 580px;
-    height: 385px;
+    .gallery__img {
+        width: 580px;
+        height: 385px;
+    }
 }
 
 /*end tablet for gallery*/
