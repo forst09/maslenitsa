@@ -22,6 +22,10 @@
     .title-mini {
         margin-bottom: 40px;
     }
+
+    .scroll {
+        padding: 0 20px;
+    }
 }
 
 /*end tablet for common*/
@@ -228,3 +232,31 @@
 
 /*end tablet for gallery*/
 /*end media for gallery*/
+
+/*start media for massmedia*/
+/*start tablet for massmedia*/
+@media(min-width: 640px) {
+    .massmedia__wrapper {
+        gap: 30px;
+    }
+
+    .card {
+        max-width: 360px;
+    }
+
+    .card__photo {
+        width: 360px;
+        height: 460px;
+    }
+
+    .card__name {
+        margin-top: 20px;
+    }
+
+    .card__text {
+        margin-top: 10px;
+    }
+}
+
+/*end tablet for massmedia*/
+/*end media for massmedia*/
