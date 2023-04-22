@@ -449,6 +449,10 @@ svg {
         top: 0;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
     }
+
+    img {
+        object-fit: contain;
+    }
 }
 
 /*end info*/

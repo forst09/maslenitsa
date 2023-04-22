@@ -1,6 +1,10 @@
 /*start media for common styles*/
 /*start tablet for common*/
 @media (min-width: 640px) {
+  section + section {
+    margin-top: 120px;
+  }
+
   .wrapper {
     padding: 0 20px;
   }
@@ -9,6 +13,10 @@
     font-size: 25px;
     line-height: 35px;
     max-width: 247px;
+  }
+
+  .title {
+    margin-bottom: 40px;
   }
 
   .title-mini {
@@ -106,6 +114,10 @@
 /*end additional styles for main*/
 /*start tablet for main*/
 @media (min-width: 640px) {
+  .main {
+    margin-bottom: 120px;
+  }
+
   .main__date {
     margin-bottom: 20px;
   }
@@ -170,3 +182,13 @@
 }
 /*end tablet for quote*/
 /*end media for quote*/
+/*start media for info*/
+/*start tablet for info*/
+@media (min-width: 640px) {
+  .info__photo {
+    margin-top: 40px;
+    height: 695px;
+  }
+}
+/*end tablet for info*/
+/*end media for info*/
