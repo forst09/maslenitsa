@@ -10,6 +10,10 @@
     line-height: 35px;
     max-width: 247px;
   }
+
+  .title-mini {
+    margin-bottom: 40px;
+  }
 }
 /*end tablet for common*/
 /*end media for common styles*/
@@ -123,3 +127,46 @@
 }
 /*end tablet for main*/
 /*end media for main*/
+/*start media for quote*/
+/*start tablet for quote*/
+@media (min-width: 640px) {
+  .quote__person-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+
+  .quote__person-photo {
+    width: 160px;
+    height: 157px;
+  }
+
+  .quote__person-desc {
+    margin-left: 0px;
+    text-align: right;
+    width: fit-content;
+  }
+
+  .quote__person-name {
+    position: relative;
+    padding-left: 45px;
+  }
+  .quote__person-name::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 1px;
+    background-color: var(--black);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .quote__person-quote {
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+/*end tablet for quote*/
+/*end media for quote*/
