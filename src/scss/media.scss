@@ -161,11 +161,7 @@
 /*start tablet for quote*/
 @media(min-width: 640px) {
 
-    .quote__person-info {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
-    }
+    .quote__person-info {}
 
     .quote__person-photo {
         width: 160px;
@@ -173,7 +169,7 @@
     }
 
     .quote__person-desc {
-        margin-left: 0px;
+        margin-left: 150px;
         text-align: right;
         width: fit-content;
     }
