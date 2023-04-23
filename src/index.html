@@ -184,7 +184,11 @@
     <!-- start price -->
     <section class="price">
         <div class="price__bg">
-            <img src="img/price/price-1.jpeg" alt="фон">
+            <picture>
+                <source srcset="img/price/price-1__desctop.jpg" media="(min-width:1200px)" alt="фоновое изображение">
+                <source srcset="img/price/price-1__tablet.jpg" media="(min-width:640px)" alt="фоновое изображение">
+                <img src="img/price/price-1__mobile.jpg" alt="фоновое изображение">
+            </picture>
         </div>
         <div class="wrapper price__wrapper">
             <div class="price__text">
