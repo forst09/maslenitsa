@@ -260,3 +260,23 @@
 
 /*end tablet for massmedia*/
 /*end media for massmedia*/
+
+/*start media for price*/
+/*start tablet for price*/
+@media(min-width: 640px) {
+    .price {
+        padding: 74px 0;
+    }
+
+    .price__title {
+        max-width: unset;
+        margin-bottom: 10px;
+    }
+
+    .price__footnote {
+        max-width: unset;
+    }
+}
+
+/*end tablet for price*/
+/*end media for price*/
