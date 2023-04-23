@@ -248,3 +248,35 @@
 }
 /*end tablet for price*/
 /*end media for price*/
+/*start media for rools*/
+/*start tablet for rools*/
+@media (min-width: 640px) {
+  .accordion {
+    padding: 25px 0;
+  }
+
+  .accordion__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: unset;
+  }
+
+  .accordion__text {
+    max-width: 45.7%;
+  }
+
+  .accordion--active .accordion__text {
+    padding: 0;
+  }
+
+  .accordion__arrow {
+    flex-shrink: 0;
+  }
+
+  .rools-btn__wrapper {
+    margin-top: 40px;
+  }
+}
+/*end tablet for rools*/
+/*end media for rools*/
