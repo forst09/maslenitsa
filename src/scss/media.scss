@@ -327,14 +327,34 @@
         height: 24px;
         transform: translate(calc(-50% + 4px), -50%);
     }
-
-    // .vjs-icon-play:before,
-    // .video-js .vjs-play-control:not(.vjs-paused) .vjs-icon-placeholder:before,
-    // .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
-    //     width: 21px;
-    //     height: 24px;
-    // }
 }
 
 /*end tablet for video*/
 /*end media for video*/
+
+/*start media for buy*/
+/*start tablet for buy*/
+@media(min-width: 640px) {
+    .buy {
+        padding: 50px 0;
+    }
+
+    .buy__wrapper {
+        padding: 0 20px;
+    }
+
+    .buy__title-medium {
+        margin-bottom: 30px;
+    }
+
+    .checkbox__label {
+        flex-direction: row;
+    }
+
+    .checkbox__label-link {
+        text-indent: 0.5ch;
+    }
+}
+
+/*end tablet for buy*/
+/*end media for buy*/

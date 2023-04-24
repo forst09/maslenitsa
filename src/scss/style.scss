@@ -671,21 +671,6 @@ svg {
     background-repeat: no-repeat;
 }
 
-// .vjs-icon-play:before,
-// .video-js .vjs-play-control:not(.vjs-playing) .vjs-icon-placeholder:before,
-// .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
-//     content: '';
-//     width: 11px;
-//     height: 14px;
-//     left: 50%;
-//     top: 50%;
-//     transform: translate(calc(-50% + 2px), -50%);
-//     background-image: url("../img/play.svg");
-//     background-size: cover;
-//     background-position: center center;
-//     background-repeat: no-repeat;
-// }
-
 .vjs-poster {
     &::after {
         content: '';

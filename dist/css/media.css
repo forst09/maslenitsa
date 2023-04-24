@@ -301,3 +301,28 @@
 }
 /*end tablet for video*/
 /*end media for video*/
+/*start media for buy*/
+/*start tablet for buy*/
+@media (min-width: 640px) {
+  .buy {
+    padding: 50px 0;
+  }
+
+  .buy__wrapper {
+    padding: 0 20px;
+  }
+
+  .buy__title-medium {
+    margin-bottom: 30px;
+  }
+
+  .checkbox__label {
+    flex-direction: row;
+  }
+
+  .checkbox__label-link {
+    text-indent: 0.5ch;
+  }
+}
+/*end tablet for buy*/
+/*end media for buy*/
