@@ -280,3 +280,24 @@
 }
 /*end tablet for rools*/
 /*end media for rools*/
+/*start media for video*/
+/*start tablet for video*/
+@media (min-width: 640px) {
+  .video-js {
+    margin-top: 30px;
+    min-height: 60.313vw;
+  }
+
+  .video-js .vjs-big-play-button {
+    width: 107px;
+    height: 107px;
+  }
+
+  .video-js .vjs-big-play-button .vjs-icon-placeholder::before {
+    width: 21px;
+    height: 24px;
+    transform: translate(calc(-50% + 4px), -50%);
+  }
+}
+/*end tablet for video*/
+/*end media for video*/

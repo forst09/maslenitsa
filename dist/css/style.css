@@ -612,9 +612,7 @@ svg {
   display: none;
 }
 
-.vjs-icon-play:before,
-.video-js .vjs-play-control:not(.vjs-playing) .vjs-icon-placeholder:before,
-.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+.video-js .vjs-big-play-button .vjs-icon-placeholder::before {
   content: "";
   width: 11px;
   height: 14px;
