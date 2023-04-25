@@ -55,6 +55,33 @@
   }
 }
 /*end tablet for header*/
+/*start desctop for header*/
+@media (min-width: 640px) {
+  .header {
+    padding-top: 50px;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation__list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .navigation__link {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--white);
+  }
+
+  .burger {
+    display: none;
+  }
+}
+/*end desctop for header*/
 /*end media for header*/
 /*start media for footer*/
 /*start tablet for footer*/
@@ -130,6 +157,13 @@
   }
 }
 /*end tablet for mobile menu*/
+/*start desctop for mobile menu*/
+@media (min-width: 640px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+/*end desctop for mobile menu*/
 /*end media for mobile menu*/
 /*start media for main*/
 /*start additional styles for main*/
