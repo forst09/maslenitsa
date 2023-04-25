@@ -147,9 +147,13 @@
     .main-btn__wrapper {
         margin-top: 95px;
     }
+
+    .main__info-wrapper {
+        padding-bottom: 40px;
+    }
 }
 
-@media(min-height: 740px) {
+@media(min-height: 740px) and (max-width: 640px) {
     .main {
         height: auto;
     }
