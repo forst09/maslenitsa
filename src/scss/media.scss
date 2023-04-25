@@ -29,6 +29,27 @@
 }
 
 /*end tablet for common*/
+
+/*start desctop for common*/
+@media(min-width: 1240px) {
+    .wrapper {
+        padding: 0;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .text {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .btn {
+        max-width: 320px;
+    }
+}
+
+/*end desctop for common*/
+
 /*end media for common styles*/
 
 /*start media for header*/
@@ -210,6 +231,22 @@
 }
 
 /*end tablet for main*/
+
+/*start desctop for main*/
+@media(min-width: 1240px) {
+    .main__info {
+        padding-top: 33.3vh;
+    }
+
+    .main-title {
+        margin-bottom: 20px;
+        font-size: 72px;
+        line-height: 72px;
+        max-width: 630px;
+    }
+}
+
+/*end desctop for main*/
 
 /*end media for main*/
 
