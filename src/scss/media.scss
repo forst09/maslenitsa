@@ -329,6 +329,52 @@
 }
 
 /*end tablet for quote*/
+
+/*start desctop for quote*/
+@media(min-width: 1240px) {
+    .quote__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .quote__person {
+        display: flex;
+    }
+
+    .quote__person-info {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .quote__person-photo {
+        width: 180px;
+        height: 176px;
+    }
+
+    .quote__person-desc {
+        margin: 20px 0 0 0;
+    }
+
+    .quote__person-name {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .quote__person-about {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .quote__person-quote {
+        margin: 0 0 0 60px;
+        max-width: 570px;
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
+/*end desctop for quote*/
+
 /*end media for quote*/
 
 /*start media for info*/
