@@ -38,7 +38,7 @@
     <!-- end main -->
 
     <!-- start quote -->
-    <section class="quote">
+    <section class="section quote">
         <div class="wrapper">
             <div class="quote__wrapper">
                 <h4 class="title-mini">Просвет</h4>
@@ -66,7 +66,7 @@
     <!-- end quote -->
 
     <!-- start info -->
-    <section class="info">
+    <section class="section info">
         <div class="wrapper">
             <div class="info__text">
                 <h2 class="title">«Четвертая стена» от NOYD Короткий Метр.</h2>
@@ -91,7 +91,7 @@
     <!-- end info -->
 
     <!-- gallery -->
-    <section class="gallery">
+    <section class="section gallery">
         <div class="wrapper">
             <h2 class="title">Как это было</h2>
         </div>
@@ -136,7 +136,7 @@
     <!-- end gallery -->
 
     <!-- start massmedia -->
-    <section class="massmedia">
+    <section class="section massmedia">
         <div class="wrapper">
             <h2 class="title">СМИ</h2>
         </div>
@@ -182,7 +182,7 @@
     <!-- end massmedia -->
 
     <!-- start price -->
-    <section class="price">
+    <section class="section price">
         <div class="price__bg">
             <picture>
                 <source srcset="img/price/price-1__desctop.jpg" media="(min-width:1200px)" alt="фоновое изображение">
@@ -203,7 +203,7 @@
     <!-- end price -->
 
     <!-- start rools -->
-    <section class="rools">
+    <section class="section rools">
         <div class="wrapper">
             <h2 class="title">Правила фестиваля</h2>
             <a href="javascript:void(0)" class="accordion" aria-expanded="false">
@@ -256,7 +256,7 @@
     <!-- end rools -->
 
     <!-- start video -->
-    <section class="video">
+    <section class="section video">
         <div class="wrapper">
             <h2 class="title">Программа фестиваля</h2>
             <div class="text">
@@ -270,29 +270,35 @@
     </section>
     <!-- end video -->
 
-    <section class="buy">
-        <div class="buy__wrapper">
-            <h3 class="title-medium title--white buy__title-medium">Стоимость билета 4000 &#8381;</h3>
-            <form action="#" class="form" id="form" novalidate="novalidate">
-                <div class="input__wrapper">
-                    <input class="input js-required" type="text" placeholder="Имя" required>
-                </div>
-                <div class="input__wrapper">
-                    <input class="input js-required" type="email" placeholder="E-mail" required>
-                </div>
-                <div class="checkbox">
-                    <input class="checkbox__input js-required" type="checkbox" id="radio" checked>
-                    <label class="checkbox__label" for="radio"><span>Даю согласие на обработку</span> <a href="#"
-                            class="link-underline checkbox__label-link">Персональных данных</a></label>
-                </div>
-                <div class="btn__wrapper buy__btn-wrapper">
-                    <input class="btn btn--input" type="submit" value="Купить билет">
-                </div>
-            </form>
-        </div>
-    </section>
+    <div class="section">
+        <!-- start buy -->
+        <section class="buy">
+            <div class="buy__wrapper">
+                <h3 class="title-medium title--white buy__title-medium">Стоимость билета 4000 &#8381;</h3>
+                <form action="#" class="form" id="form" novalidate="novalidate">
+                    <div class="input__wrapper">
+                        <input class="input js-required" type="text" placeholder="Имя" required>
+                    </div>
+                    <div class="input__wrapper">
+                        <input class="input js-required" type="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="checkbox">
+                        <input class="checkbox__input js-required" type="checkbox" id="radio" checked>
+                        <label class="checkbox__label" for="radio"><span>Даю согласие на обработку</span> <a href="#"
+                                class="link-underline checkbox__label-link">Персональных данных</a></label>
+                    </div>
+                    <div class="btn__wrapper buy__btn-wrapper">
+                        <input class="btn btn--input" type="submit" value="Купить билет">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- end buy -->
 
-    @@include('html/footer.html',{})
+        <!-- start footer -->
+        @@include('html/footer.html',{})
+        <!-- end footer -->
+    </div>
 
     <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.0.4/lang/ru.min.js"
