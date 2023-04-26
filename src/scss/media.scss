@@ -473,7 +473,7 @@
 /*end tablet for massmedia*/
 
 /*start desctop for massmedia*/
-@media(min-width: 640px) {
+@media(min-width: 1240px) {
     .massmedia__scroll {
         padding: 0;
         max-width: 1200px;
@@ -508,6 +508,32 @@
 
     .price__footnote {
         max-width: unset;
+    }
+}
+
+/*end tablet for price*/
+
+/*start tablet for price*/
+@media(min-width: 1240px) {
+    .price {
+        padding: 138px 0;
+    }
+
+    .price__title {
+        margin-bottom: 20px;
+    }
+
+    .price__footnote {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .price-btn__wrapper {
+        margin-top: 40px;
+    }
+
+    .price__btn {
+        margin: 0 auto;
     }
 }
 
