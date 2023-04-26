@@ -42,9 +42,18 @@
         margin: 0 auto;
     }
 
+    .title {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
     .text {
         font-size: 18px;
         line-height: 23px;
+
+        p+p {
+            margin-top: 20px;
+        }
     }
 
     .btn {
@@ -395,6 +404,29 @@
 }
 
 /*end tablet for info*/
+
+/*start desctop for info*/
+@media(min-width: 1240px) {
+    .info__wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .info__text,
+    .info__photo {
+        flex: 1 1 50%;
+    }
+
+    .info__photo {
+        margin: 0;
+        height: 660px;
+    }
+}
+
+/*end desctop for info*/
 /*end media for info*/
 
 /*start media for gallery*/
