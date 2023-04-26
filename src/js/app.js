@@ -101,7 +101,12 @@ document.addEventListener('DOMContentLoaded', function () {
             nextEl: '.gallery__swiper-next',
             prevEl: '.gallery__swiper-prev',
         },
-        // breakpoints: {}
+        // breakpoints: {
+        //     1240: {
+        //         centeredSlides: true,
+        //         spaceBetween: 60,
+        //     }
+        // }
     })
 
 });

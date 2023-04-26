@@ -471,6 +471,27 @@
 }
 
 /*end tablet for massmedia*/
+
+/*start desctop for massmedia*/
+@media(min-width: 640px) {
+    .massmedia__scroll {
+        padding: 0;
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow-x: unset;
+    }
+
+    .massmedia__wrapper {
+        gap: 60px;
+    }
+
+    .card__name {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+/*end desctop for massmedia*/
 /*end media for massmedia*/
 
 /*start media for price*/
