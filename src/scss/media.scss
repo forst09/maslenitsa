@@ -32,6 +32,10 @@
 
 /*start desctop for common*/
 @media(min-width: 1240px) {
+    .section+.section {
+        margin-top: 190px;
+    }
+
     .wrapper {
         padding: 0;
         max-width: 1200px;
@@ -63,7 +67,7 @@
 /*end tablet for header*/
 
 /*start desctop for header*/
-@media(min-width: 640px) {
+@media(min-width: 1240px) {
     .header {
         padding-top: 50px;
     }
@@ -173,7 +177,7 @@
 /*end tablet for mobile menu*/
 
 /*start desctop for mobile menu*/
-@media(min-width: 640px) {
+@media(min-width: 1240px) {
     .mobile-menu {
         display: none;
     }
@@ -273,6 +277,10 @@
 
 /*start desctop for main*/
 @media(min-width: 1240px) {
+    .main {
+        margin-bottom: 190px;
+    }
+
     .main__info {
         padding-top: 33.3vh;
     }
