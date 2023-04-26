@@ -521,6 +521,26 @@
   }
 }
 /*end tablet for rools*/
+/*start desctop for rools*/
+@media (min-width: 1240px) {
+  .accordion {
+    padding: 40px 0;
+  }
+
+  .title-little {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .accordion__text {
+    max-width: 46.25%;
+  }
+
+  .rools__btn {
+    margin: 0 auto;
+  }
+}
+/*end desctop for rools*/
 /*end media for rools*/
 /*start media for video*/
 /*start tablet for video*/
