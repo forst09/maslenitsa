@@ -617,6 +617,26 @@
 }
 
 /*end tablet for video*/
+
+/*start desctop for video*/
+@media(min-width: 1240px) {
+    .video__title-wrapper {
+        display: flex;
+        gap: 174px;
+    }
+
+    .video__text {
+        max-width: 345px;
+    }
+
+    .video-js {
+        margin: 0;
+        min-height: unset;
+        height: 630px;
+    }
+}
+
+/*end desctop for video*/
 /*end media for video*/
 
 /*start media for buy*/
