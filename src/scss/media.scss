@@ -47,6 +47,11 @@
         line-height: 52px;
     }
 
+    .title-medium {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
     .text {
         font-size: 18px;
         line-height: 23px;
@@ -156,6 +161,29 @@
 }
 
 /*end tablet for footer*/
+
+/*start desctop for footer*/
+@media(min-width: 1240px) {
+    .footer {
+        flex: 1 1 53.9%;
+        padding: 80px 0;
+    }
+
+    .footer__wrapper {
+        padding: 0 20px 0 60px;
+        max-width: 650px;
+    }
+
+    .footer__title-medium {
+        margin-bottom: 64px;
+    }
+
+    .footer__bottom {
+        margin-top: 130px;
+    }
+}
+
+/*end desctop for footer*/
 /*end media for footer*/
 
 /*start media for mobile menu*/
@@ -664,4 +692,30 @@
 }
 
 /*end tablet for buy*/
+
+/*start desctop for buy*/
+@media(min-width: 1240px) {
+    .buy-and-footer {
+        display: flex;
+    }
+
+    .buy {
+        padding: 84px 0;
+        flex: 1 1 50%;
+    }
+
+    .buy__wrapper {
+        margin-left: auto;
+        max-width: 420px;
+        width: 100%;
+        box-sizing: content-box;
+        padding: 0 150px 0 20px;
+    }
+
+    .buy__title-medium {
+        margin-bottom: 52px;
+    }
+}
+
+/*end desctop for buy*/
 /*end media for buy*/
