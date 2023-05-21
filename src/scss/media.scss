@@ -63,6 +63,22 @@
 
     .btn {
         max-width: 320px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            background-color: transparent;
+            box-shadow: inset 0px 0px 0px 1px var(--white);
+            color: var(--white);
+        }
+    }
+
+    .btn--border {
+        &:hover {
+            border: 1px solid transparent;
+            background-color: var(--black);
+            color: var(--white);
+            box-shadow: none;
+        }
     }
 }
 
@@ -639,7 +655,7 @@
 
     .video-js .vjs-big-play-button .vjs-icon-placeholder::before {
         width: 21px;
-        height: 24px;
+        height: 26px;
         transform: translate(calc(-50% + 4px), -50%);
     }
 }
@@ -661,6 +677,17 @@
         margin: 0;
         min-height: unset;
         height: 630px;
+    }
+
+    .video-js .vjs-big-play-button {
+        transition: background-color 0.3s ease;
+    }
+
+    .video-js:hover .vjs-big-play-button,
+    .video-js .vjs-big-play-button:focus {
+        border: none;
+        background-color: var(--grey);
+        transition: background-color 0.3s ease;
     }
 }
 
