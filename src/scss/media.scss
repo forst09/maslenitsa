@@ -589,6 +589,14 @@
 @media(min-width: 640px) {
     .accordion {
         padding: 25px 0;
+
+        &:nth-of-type(n + 4) {
+            display: flex;
+        }
+
+        &:nth-of-type(n + 6) {
+            display: none;
+        }
     }
 
     .accordion__content {

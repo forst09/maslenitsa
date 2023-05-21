@@ -535,6 +535,12 @@
   .accordion {
     padding: 25px 0;
   }
+  .accordion:nth-of-type(n + 4) {
+    display: flex;
+  }
+  .accordion:nth-of-type(n + 6) {
+    display: none;
+  }
 
   .accordion__content {
     display: flex;

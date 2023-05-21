@@ -88,6 +88,32 @@ document.addEventListener('DOMContentLoaded', function () {
         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
 
+    //show more btn 
+    const btnShowMore = document.querySelector('.rools__btn');
+    const accordions = document.querySelectorAll('.accordion');
+
+    btnShowMore.addEventListener('click', function () {
+        if (this.classList.contains('show')) {
+            this.classList.remove('show');
+            this.textContent = 'Загрузить ещё';
+            accordions.forEach(item => {
+                if (item.style.display == 'flex') {
+                    item.style.display = 'none';
+                }
+            })
+        }
+        else {
+            this.classList.add('show');
+            this.textContent = 'Свернуть';
+            accordions.forEach(item => {
+                if (window.getComputedStyle(item).display == 'none') {
+                    item.style.display = 'flex';
+                }
+            })
+        }
+
+    })
+
     //swiper gallery
     const swiperGallery = new Swiper('.gallery__swiper', {
         loop: true,

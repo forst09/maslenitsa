@@ -582,6 +582,10 @@ svg {
         border-top: 1px solid var(--grey);
     }
 
+    &:nth-of-type(n + 4) {
+        display: none;
+    }
+
     &--active {
         .accordion__text {
             opacity: 1;
@@ -592,6 +596,11 @@ svg {
             transform: rotate(180deg);
         }
     }
+}
+
+.accordion.visible {
+    display: flex;
+    opacity: 1;
 }
 
 .accordion__text {
