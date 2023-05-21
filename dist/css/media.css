@@ -657,7 +657,7 @@
   }
 
   .checkbox__label-link {
-    text-indent: 0.5ch;
+    margin-left: 3px;
   }
 }
 /*end tablet for buy*/

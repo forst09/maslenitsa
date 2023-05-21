@@ -212,6 +212,9 @@ svg {
   line-height: 25px;
   color: var(--grey);
 }
+.footer__nav-link::after {
+  background-color: var(--grey);
+}
 
 .footer__links {
   margin-top: 10px;
@@ -223,6 +226,12 @@ svg {
 .footer__links-item {
   font-size: 18px;
   line-height: 25px;
+}
+.footer__links-item::after {
+  background-color: var(--black);
+}
+.footer__links-item:hover {
+  color: var(--grey);
 }
 
 /*end footer*/
@@ -747,9 +756,14 @@ svg {
   display: inline-block;
   color: var(--white);
 }
+.checkbox__label-link::after {
+  background-color: var(--white);
+}
 
 .link-underline {
   position: relative;
+  width: fit-content;
+  transition: color 0.3s ease;
 }
 .link-underline::after {
   content: "";
@@ -758,7 +772,17 @@ svg {
   bottom: 0;
   width: 100%;
   height: 1px;
-  background-color: var(--black);
+  transition: width 0.3s ease;
+}
+.link-underline:hover::after {
+  width: 0;
+}
+
+.link-underline--opposite::after {
+  width: 0;
+}
+.link-underline--opposite:hover::after {
+  width: 100%;
 }
 
 .buy__btn-wrapper {

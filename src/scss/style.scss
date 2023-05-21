@@ -222,6 +222,10 @@ svg {
     font-size: 18px;
     line-height: 25px;
     color: var(--grey);
+
+    &::after {
+        background-color: var(--grey);
+    }
 }
 
 .footer__links {
@@ -234,6 +238,14 @@ svg {
 .footer__links-item {
     font-size: 18px;
     line-height: 25px;
+
+    &::after {
+        background-color: var(--black);
+    }
+
+    &:hover {
+        color: var(--grey);
+    }
 }
 
 /*end footer*/
@@ -804,10 +816,16 @@ svg {
 .checkbox__label-link {
     display: inline-block;
     color: var(--white);
+
+    &::after {
+        background-color: var(--white);
+    }
 }
 
 .link-underline {
     position: relative;
+    width: fit-content;
+    transition: color 0.3s ease;
 
     &::after {
         content: '';
@@ -816,7 +834,25 @@ svg {
         bottom: 0;
         width: 100%;
         height: 1px;
-        background-color: var(--black);
+        transition: width 0.3s ease;
+    }
+
+    &:hover {
+        &::after {
+            width: 0;
+        }
+    }
+}
+
+.link-underline--opposite {
+    &::after {
+        width: 0;
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+        }
     }
 }
 
