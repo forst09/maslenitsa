@@ -741,6 +741,15 @@ svg {
     &::placeholder {
         font-family: 'Inter', sans-serif;
         color: var(--grey);
+        transition: color 0.3s ease;
+    }
+
+    &:focus,
+    &:focus-within,
+    &:active {
+        &::placeholder {
+            color: var(--white);
+        }
     }
 
 }

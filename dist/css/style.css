@@ -688,6 +688,10 @@ svg {
 .input::placeholder {
   font-family: "Inter", sans-serif;
   color: var(--grey);
+  transition: color 0.3s ease;
+}
+.input:focus::placeholder, .input:focus-within::placeholder, .input:active::placeholder {
+  color: var(--white);
 }
 
 .input.error {

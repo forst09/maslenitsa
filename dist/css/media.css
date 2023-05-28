@@ -29,7 +29,7 @@
 }
 /*end tablet for common*/
 /*start desctop for common*/
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .section + .section {
     margin-top: 190px;
   }
@@ -86,7 +86,7 @@
 }
 /*end tablet for header*/
 /*start desctop for header*/
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .header {
     padding-top: 50px;
   }
@@ -105,6 +105,10 @@
     font-size: 18px;
     line-height: 25px;
     color: var(--white);
+    transition: color 0.3s ease;
+  }
+  .navigation__link:hover {
+    color: var(--grey-medium);
   }
 
   .burger {
@@ -162,7 +166,7 @@
 }
 /*end tablet for footer*/
 /*start desctop for footer*/
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .footer {
     flex: 1 1 53.9%;
     padding: 80px 0;
@@ -209,7 +213,7 @@
 }
 /*end tablet for mobile menu*/
 /*start desctop for mobile menu*/
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .mobile-menu {
     display: none;
   }
@@ -299,7 +303,7 @@
 }
 /*end tablet for main*/
 /*start desctop for main*/
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .main {
     margin-bottom: 190px;
   }
@@ -354,7 +358,7 @@
 }
 /*end tablet for quote*/
 /*start desctop for quote*/
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .quote__wrapper {
     display: flex;
     justify-content: space-between;
@@ -407,7 +411,7 @@
 }
 /*end tablet for info*/
 /*start desctop for info*/
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .info__wrapper {
     display: flex;
     flex-direction: row-reverse;
@@ -436,11 +440,28 @@
   }
 
   .gallery__img {
-    width: 580px;
-    height: 385px;
+    width: 90vw;
+    height: 60vw;
   }
 }
 /*end tablet for gallery*/
+/*start desctop for gallery*/
+@media (min-width: 1280px) {
+  .gallery__swiper {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1300px) {
+  .gallery__img {
+    width: 1200px;
+    height: 700px;
+  }
+
+  .arrow {
+    display: block;
+  }
+}
+/*end desctop for gallery*/
 /*end media for gallery*/
 /*start media for massmedia*/
 /*start tablet for massmedia*/
@@ -468,7 +489,7 @@
 }
 /*end tablet for massmedia*/
 /*start desctop for massmedia*/
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .massmedia__scroll {
     padding: 0;
     max-width: 1200px;
@@ -505,7 +526,7 @@
 }
 /*end tablet for price*/
 /*start tablet for price*/
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .price {
     padding: 138px 0;
   }
@@ -567,7 +588,7 @@
 }
 /*end tablet for rools*/
 /*start desctop for rools*/
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .accordion {
     padding: 40px 0;
   }
@@ -608,7 +629,7 @@
 }
 /*end tablet for video*/
 /*start desctop for video*/
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .video__title-wrapper {
     display: flex;
     gap: 174px;
@@ -662,7 +683,7 @@
 }
 /*end tablet for buy*/
 /*start desctop for buy*/
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .buy-and-footer {
     display: flex;
   }
