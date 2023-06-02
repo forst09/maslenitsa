@@ -459,6 +459,46 @@
 
   .arrow {
     display: block;
+    position: static;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+  }
+  .arrow:hover .arrow__icon {
+    fill: var(--grey);
+  }
+
+  .arrow__icon {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    transition: fill 0.3s ease;
+  }
+
+  .swiper-button-next:after,
+.swiper-button-prev:after {
+    content: none;
+  }
+
+  .swiper-button-next .arrow__icon {
+    transform: rotate(180deg);
+  }
+
+  .gallery__swiper-arrows {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 92%;
+  }
+}
+@media (min-width: 1600px) {
+  .gallery__swiper-arrows {
+    max-width: 1480px;
   }
 }
 /*end desctop for gallery*/

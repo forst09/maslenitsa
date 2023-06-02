@@ -11,4 +11,8 @@
     <symbol viewBox="0 0 28 28" id="arrow">
         <path d="M24 9L14 19L4 9" stroke-width="2" />
     </symbol>
+    <symbol viewBox="0 0 46 46" id="arrowSlider">
+        <path
+            d="M6.15081 23.6972L12.5229 30.1196L11.4362 31.2148L3.28627 23.0006L11.4362 14.7863L12.5229 15.8815L6.30514 22.1483L42.7148 22.1483L42.7148 23.6972L6.15081 23.6972Z" />
+    </symbol>
 </svg>
