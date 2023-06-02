@@ -9,6 +9,10 @@
   --red: #C42C2C;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   font-family: "Inter", sans-serif;
